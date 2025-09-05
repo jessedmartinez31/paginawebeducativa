@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa - Mi LMS</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 960px;
+            margin: 2rem auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Estilos para la sección de cursos */
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .course-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilos para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 0.8rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #e2e2e2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi LMS</h1>
+        <p>Tu portal de aprendizaje en línea</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#perfil">Mi Perfil</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Mi LMS</h2>
+            <p>Descubre una nueva forma de aprender con nuestros cursos en línea. Explora temas desde programación hasta historia, y avanza a tu propio ritmo.</p>
+            <h3>Cursos Destacados</h3>
+            <div class="course-list">
+                <article class="course-card">
+                    <h4>Curso de HTML y CSS</h4>
+                    <p>Aprende a construir sitios web desde cero. Este curso te guiará a través de los fundamentos de HTML para la estructura y CSS para el estilo.</p>
+                </article>
+                <article class="course-card">
+                    <h4>Introducción a la Inteligencia Artificial</h4>
+                    <p>Sumérgete en el mundo de la IA. Cubre conceptos básicos, tipos de aprendizaje automático y aplicaciones prácticas.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="cursos">
+            <h2>Nuestros Cursos</h2>
+            <div class="course-list">
+                <article class="course-card">
+                    <h4>Fundamentos de JavaScript</h4>
+                    <p>Un curso fundamental para dominar la programación del lado del cliente.</p>
+                </article>
+                <article class="course-card">
+                    <h4>Desarrollo Web con Python (Django)</h4>
+                    <p>Aprende a crear aplicaciones web robustas usando el framework Django.</p>
+                </article>
+                <article class="course-card">
+                    <h4>Bases de Datos SQL</h4>
+                    <p>Dominio de consultas y administración de bases de datos relacionales.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="perfil">
+            <h2>Mi Perfil</h2>
+            <p>Hola, [Nombre del Estudiante]. Aquí puedes ver tu progreso y los cursos en los que estás inscrito.</p>
+            <h3>Mis Cursos Inscritos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Progreso</th>
+                        <th>Última Visita</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Curso de HTML y CSS</td>
+                        <td>50%</td>
+                        <td>01 de Septiembre de 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Introducción a la IA</td>
+                        <td>10%</td>
+                        <td>02 de Septiembre de 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos a través del siguiente formulario o email.</p>
+            <address>
+                Email: <a href="mailto:info@milms.com">info@milms.com</a><br>
+                Teléfono: +123 456 7890
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi LMS. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+<button id="menu-toggle">☰</button>
